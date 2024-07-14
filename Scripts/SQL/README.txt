@@ -1,7 +1,7 @@
-The SQL File provided here Creates the Environment to make the SQL Requests from the PHP Scripts work.
-It also Creates some Dummy data, which you dont Need to create, These are just for my uni module.
-I am using MAMP, C# Scripts direct to a URL which is the Destination of the parent Folder/ the Script Name.
-Since the PHP Files are in this Project, you Need to go to your HTDOCS Folder and create the worldbuilding parent Folder
-In there you have to create hardlinks that Point to the PHP Files that are in this Unity Project.
+The SQL File provided here creates the Environment to make the SQL Requests from the PHP Scripts work.
+It also creates some dummy-data, which you dont need to include, these are just for my data analytics module.
+I am using MAMP as a local Server. C# Scripts direct to an URL which is the destination of the parent Folder/ the Script Name.
+Since the PHP Files are in this Repository folder, you need to go to your HTDOCS Folder, create the worldbuilding parent Folder,
+and create hardlinks that point to the PHP files that are in this Repository.
 
 Thank you for your interest :)!

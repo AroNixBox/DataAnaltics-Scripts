@@ -53,9 +53,9 @@ INSERT INTO playerbuildings (Email, BuildingName, PosX, PosZ) VALUES
 
 -- Get the Top 3 Users with the Most towers placed on the Map
 SELECT users.Username, COUNT(*) AS BuildingCount    -- Select the username from the users table and count the number of buildings for each user, naming the count 'BuildingCount'
-FROM users                                      -- Start with the users table as the base for the query
-JOIN playerbuildings ON users.Email = playerbuildings.Email  -- Combine information from the playerbuildings table by matching rows where the Email in both tables is the same
-WHERE BuildingName = 'Tower'                   -- Filter the combined results to only include rows where the BuildingName is 'Tower'
-GROUP BY users.Email                            -- Group the filtered results by the user's email to count the number of towers each user has
-ORDER BY BuildingCount DESC                     -- Sort the grouped results in descending order based on the number of towers
-LIMIT 3;
+    FROM users                                      -- Start with the users table as the base for the query
+    JOIN playerbuildings ON users.Email = playerbuildings.Email  -- Combine information from the playerbuildings table by matching rows where the Email in both tables is the same
+    WHERE BuildingName = 'Tower'                   -- Filter the combined results to only include rows where the BuildingName is 'Tower'
+    GROUP BY users.Email                            -- Group the filtered results by the user's email to count the number of towers each user has
+    ORDER BY BuildingCount DESC                     -- Sort the grouped results in descending order based on the number of towers
+    LIMIT 3;
