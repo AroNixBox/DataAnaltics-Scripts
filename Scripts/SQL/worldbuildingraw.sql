@@ -59,3 +59,12 @@ SELECT users.Username, COUNT(*) AS BuildingCount    -- Select the username from 
     GROUP BY users.Email                            -- Group the filtered results by the user's email to count the number of towers each user has
     ORDER BY BuildingCount DESC                     -- Sort the grouped results in descending order based on the number of towers
     LIMIT 3;
+
+-- Alle weiteren angeforderten Queries und Befehle sind in dem Github Repository zu finden: https://github.com/AroNixBox/DataAnaltics-Scripts/tree/main
+-- Zu dem Punkt: 3 unterschiedliche SELECT-Abfragen sind implementiert
+-- 1.: Line 18: https://github.com/AroNixBox/DataAnaltics-Scripts/blob/main/Scripts/PHP/Login.php
+-- 2.: Line 19: https://github.com/AroNixBox/DataAnaltics-Scripts/blob/main/Scripts/PHP/SavePlacedBuildings.php
+-- 3.: Line 12: https://github.com/AroNixBox/DataAnaltics-Scripts/blob/main/Scripts/PHP/LoadSavedBuildings.php
+
+-- Anhand eines kurzen Youtube Videos wird die Funktionalität des Praxisprojektes veranschaulicht:
+-- https://www.youtube.com/watch?v=zkBjWPzF19Y&ab_channel=NixonScherbarth
